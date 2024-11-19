@@ -2,4 +2,183 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
+  background-image: var(--cover-image); 
+  background-color: var(--bg-color);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+.section-padding {
+  padding-inline: var(--section-padding);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  block-size: 100vh;
+  padding-block: 10px;
+  position: relative;
+}
+
+
+
+.header__decor-dark {
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  right: 20px;
+  top: 10px;
+  color: var(--rec-color);
+}
+
+.header__decor-dark::after {
+  content: "";
+  background-color: var(--rec-color);
+  box-shadow: var(--rec-border);
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  margin-inline-start: 10px;
+}
+
+.header__theme-menu {
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  block-size: 26px;
+  inline-size: 70px;
+  background-color: transparent;
+  color: var(--buttontxt-color);
+  border: var(--button-border);
+  line-height: var(--button-line-height);
+
+}
+
+.header-title {
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--main-accent-fs);
+  line-height: var(--main-accent-lh);
+  color: var(--main-accent-color);
+  text-shadow: 4px 4px var(--accent-bgcolor);
+}
+
+.header-text {
+  background-color: var(--accent-bgcolor);
+  color: var(--accent-wbg-color);
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+/* Articles downthere */
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block-start: 40px;
+  padding-block-end: 50px;
+}
+
+.first-article__grid-container, .second-article__grid-container, .third-article__grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.article__heading {
+  color: var(--accent-color);
+  padding-block-end:  10px;
+  justify-self: start;
+}
+
+.article__accent-text {
+  color: var(--accent-wbg-color);
+  background-color: var(--accent-bgcolor);
+  justify-self: start;
+  inline-size: 100%;
+ 
+}
+
+.article__main-text {
+  color: var(--text-color);
+
+}
+
+.article__main-text a {
+  color: var(--text-color);
+  text-shadow: 2px 2px var(--accent-bgcolor);
+}
+.bold {
+  font-weight: 700;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding-block-end: 40px;
+}
+
+.gallery__item {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+  object-position: center;
+}
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.footer-title {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--main-accent-fs);
+  line-height: var(--main-accent-lh);
+  color: var(--main-accent-color);
+  text-shadow: 4px 4px var(--accent-bgcolor);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top:10px;
+  right: 10px;
+  border-block-start: 1px solid var(--rec-color) ;
+  border-inline-end: 1px solid var(--rec-color);
+  block-size: 25px;
+  inline-size: 25px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom:10px;
+  left: 10px;
+  border-block-end: 1px solid var(--rec-color) ;
+  border-inline-start: 1px solid var(--rec-color);
+  block-size: 25px;
+  inline-size: 25px;
 }
