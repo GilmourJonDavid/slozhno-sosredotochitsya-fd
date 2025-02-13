@@ -40,8 +40,8 @@
   justify-items: end;
   align-items: center;
   position: relative;
-  padding-block-end: var(--header-padding);
-  padding-block-start: var(--header-padding);
+  padding-block-end: var(--header-footer-padding);
+  padding-block-start: var(--header-footer-padding);
   
 }
 
@@ -95,6 +95,7 @@
 /* later on fix events conditions */
 .header__theme-menu-button_active {
   outline: 1px solid var(--button-border-color);
+  pointer-events: none
 }
 
 .header__theme-menu-button:focus {
@@ -272,6 +273,8 @@
   block-size: 100vh;
   min-block-size: 375px;
   position: relative;
+  padding-block-end: var(--header-footer-padding);
+  padding-block-start: var(--header-footer-padding);
   
 
 }
@@ -286,7 +289,7 @@
 }
 
 
-@media (width >= 700px) {
+@media (width >= 768px) {
 
   .decorated-zone::before {
     top: 20px;
@@ -369,6 +372,14 @@
   }
   
 @media (width >= 900px) {
+
+  .header {
+    min-block-size: 1024px;
+  }
+
+  .footer {
+    min-block-size: 1024px;
+  }
 
   .header__theme-menu {
     justify-self: center;
