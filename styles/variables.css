@@ -4,54 +4,53 @@
 */
 
 :root {
+  --page-padding: 10px;
+  --header-padding: 10px;
   --main-font: 'IBM Plex mono', monospace;
   --main-font-size: 18px;
   --main-line-height: 23.4px;
-  --text-color:#F1B2CE;
-  --accent-color:#FF0070;
-  --accent-wbg-color: #000028;
-  --bg-color:#000028;
-  --accent-bgcolor:#FF0070;
-  --main-accent-color:#DB00FF;
-  --main-accent-fs: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  --main-accent-lh: clamp(5.98125rem, 4.7595rem + 5.2126vw, 8.095625rem);
-  --main-accent-border: 4px 4px #FF0070;
-  --cover-image:url(../images/cover-image-dark.png);
-  --rec-color:#FF0070;
-  --rec-border:0px 0px 4px 2px #FF0070;
-  --buttontxt-color:#FF0070;
-  --button-border: 1px solid #FF0070;
-  --button-line-height: 18px;
-  --bold-text: 700;
-  --link-shadow: 2px 2px #FF0070;
-  --link-decoration-color: #FF0070;
-  --button-hover: rgba(50, 49, 45, 0.4);
-  /*gap etc*/
-  --articles-padding: 50px;
-  --section-padding: 10px;
-  --gallery-gap: 10px;
-  --gallery-margin: 10px;
-  --gallery-section-margin: 40px;
-  --header-margin: 40px;
-  --articles-section-margin: 50px;
-
+  --main-font-color: #F1B2CE;
+  --accented-background-color: #FF0070;
+  --accented-text-collor: #000028;
+  --bold-text: bold;
+  --bg-color: #000028;
+  --cover-image: url(../images/cover-image-dark.png);
+  --decor-color: #FF0070;
+  --decor-circle-color: #FF0070;
+  --button-text-color: #FF0070;
+  --section-heading-color: #FF0070;
+  --button-text-line-height: 18px;
+  --button-border-color: #FF0070;
+  --button-border-color-evented: #FF007066;
+  --main-title-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  --main-title-line-height: 95.7px;
+  --main-title-color:#DB00FF;
+  --main-title-shadow-color:#FF0070;
+  --page-gap: 40px; /*change it for biger screens later*/
+  --main-gap: 50px; /* change it for biger screens later*/
+  --gallery-gap: 10px; /* change it for biger screens later*/
+  --main-title-margin: 0;
+  --header-text-width: 355px;
 }
 
-@media (width >= 768px) {
+@media (width >= 700px) {
   :root {
-  --main-accent-fs: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --maim-accent-lh: clamp(6.1875rem, 0.4631rem + 11.9258vw, 8.095625rem);
-  --articles-section-margin: 80px;
-  --articles-padding: 80px;
-  --section-padding: 20px;
-  --gallery-gap: 20px;
-  --gallery-margin: 20px;
-  --gallery-section-margin: 60px;
-  --header-margin: 60px;
-  --articles-section-margin: 80px;
-  
+    --page-padding: 20px;
+    --main-gap: 80px;
+    --main-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --main-title-line-height: 99px;
+    --page-gap: 60px;
+    --gallery-gap: 20px;
+    --header-text-width: 364px;
+    --main-title-margin: -20px;
+    --header-padding: 20px;
   }
-
 }
 
 
+@media (width >= 900px) { 
+  :root {
+  --header-text-width: 491px;
+  --main-title-line-height: 129.53px;
+  }
+}

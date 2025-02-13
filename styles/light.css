@@ -14,49 +14,36 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --text-color: #353430;
-  --accent-color:#353430;
-  --accent-wbg-color: #353430;
+  --main-font-color: #353430;
+  --accented-background-color: #FF8DCB;
+  --accented-text-collor: #353430;
   --bg-color: #fff1f7;
-  --accent-bgcolor: #FF8DCB;
-  --main-accent-color: #FFC2E6;
-  --main-accent-border: 4px 4px #ff0070;
-  --buttontxt-color:#353430;
-  --button-border: 1px solid #353430;
-  --cover-image:url(../images/cover-image-light.png);
-  --decor-border: #353430;
-  --link-shadow: 2px 2px #FF0070;
-  --link-decoration-color: #FF8DCB;
-  --button-hover: rgba(255, 0, 112, 0.4);
+  --cover-image: url(../images/cover-image-light.png);
+  --decor-color: #353430;
+  --main-title-color:#FFC2E6;
+  --main-title-shadow-color:#ff0070;
+  --button-border-color: #353430;
+  --button-border-color-evented: #32312D66;
+  --section-heading-color: #353430;
+  --button-text-color: #353430;
+  --main-title-shadow-color:#FF8DCB;
 }
 
-.theme_light .header__decor-dark {
-  display: none;
-}
+@media (prefers-color-scheme: light) { 
 
-.theme_light .header__theme-menu-button_active {
-  border: var(--button-border);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: #353430;
-    --accent-color:#353430;
-    --accent-wbg-color: #353430;
+  :root { 
+    --main-font-color: #353430;
+    --accented-background-color: #FF8DCB;
+    --accented-text-collor: #353430;
     --bg-color: #fff1f7;
-    --accent-bgcolor: #FF8DCB;
-    --main-accent-color: #FFC2E6;
-    --main-accent-border: 4px 4px #ff0070;
-    --border: 4px 4px 0px 0px #353430;
-    --button-border: 1px solid #353430;
-    --buttontxt-color:#353430;
-    --cover-image:url(../images/cover-image-light.png);
+    --cover-image: url(../images/cover-image-light.png);
+    --decor-color: #353430;
+    --main-title-color:#FFC2E6;
+    --main-title-shadow-color:#ff0070;
+    --button-border-color: #353430;
+    --button-border-color-evented: #32312D66; 
+    --section-heading-color: #353430;
+    --button-text-color: #353430;
+    --main-title-shadow-color:#FF8DCB;
   }
-.header__decor-dark {
-  display: none;
-}
-
-.header__theme-menu-button_active {
-  border: var(--button-border);
-}
 }
