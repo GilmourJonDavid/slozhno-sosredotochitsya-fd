@@ -19,6 +19,7 @@
   --button-border-color-evented: hsl(334, 100%, 40%);
   --button-text-color: #FF0070;
   --main-title-shadow-color:#FF0070;
+  --section-heading-color: #FF0070;
 }
 
 .theme_dark .header__decor-dark {
