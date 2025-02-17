@@ -202,14 +202,15 @@
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
 }
-.extra-margin {
-  margin-inline-end: 10px;
-}
 
-.mulitarticle-heading {
+.big-article-heading {
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
+  margin-block-end: 20px;
 }
+
+
+
 
 .article-part-heading {
   font-weight: normal;
@@ -302,13 +303,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .first-layout .section-heading {
-    grid-column: 1 / 2;
+
+  .first-layout {
+    grid-template-columns: 1fr 2fr;
   }
 
-  .first-layout .articles {
-    grid-column: 2 / 4;
-  }
 
   .second-layout .section-heading {
     grid-column: 1 / 4;
