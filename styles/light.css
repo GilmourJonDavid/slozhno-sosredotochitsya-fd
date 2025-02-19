@@ -46,4 +46,9 @@
     --button-text-color: #353430;
     --main-title-shadow-color:#FF8DCB;
   }
+  
+  .header__decor-dark {
+    display: none;
+  }
 }
+
